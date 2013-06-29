@@ -1,16 +1,13 @@
 $(document).ready(function() {
 
 	$('img').mouseenter(function() {
-	
 		$(this).fadeTo('fast',0.75);
-	
 	});
 	
 	$('img').mouseleave(function() {
-	
 		$(this).fadeTo('fast',1);
-		
 	});
+    
 	
 	
 	$('input:text').focus(function () {
@@ -41,7 +38,7 @@ $(document).ready(function() {
 		}
 	
 	});
-	
+
 });
 
 

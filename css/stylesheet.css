@@ -10,32 +10,16 @@ body {
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	height: 50px;
+    width: auto;
+    box-shadow: 5px 0px 5px #5BA3F5;
+    margin:0 auto;
 }
 
 #header h1 {
 	text-align:center;
 	color:#FCFCFC;
 	font-family:Verdana;
-	padding: 10px 0px 0px 10px;
-}
-
-#wrapper {
-	border:1px solid #3486E3;
-	position: relative;
-	top: -10px;
-	padding: 20px 0px 30px 20px;
-	box-shadow: 5px 5px 5px #3486E3;
-	font-size:0.8em;
-	text-align:center;
-	font-family:Verdana, Arial, Sans-Serif;
-}
-
-.generalText {
-	text-align: center;
-}
-
-#hederPics {
-
+	padding: 10px 10px 0px 10px;
 }
 
 #headerPics img {
@@ -44,25 +28,67 @@ body {
 	border:1px solid #3486E3;
 }
 
-#userForms {
-	width: 100%;
+#wrapper {
+	border:1px solid #3486E3;
+	position: relative;
+	top: -10px;
+	box-shadow: 5px 0px 5px #5BA3F5;
+	font-size:1em;
 	text-align:center;
-	font-family:Verdana;
+	font-family:Verdana, Arial, Sans-Serif;
+    width: auto;
+    margin:0 auto;
+    padding:10px 10px 10px 10px;
 }
 
+#footer {
+    border:1px solid #3486E3;
+	position: relative;
+	top: -10px;
+	box-shadow: 5px 5px 5px #5BA3F5;
+	font-size:1em;
+	text-align:center;
+	font-family:Verdana, Arial, Sans-Serif;
+    width: auto;
+    margin:0 auto;
+    padding:10px 10px 10px 10px;
+}
+
+#userInfo {
+    width: auto;
+    display:inline-block;
+    border: 1px solid #3486E3;
+}
+
+
+#userForms {
+	width: auto;
+	text-align:center;
+	font-family:Verdana;
+    display: inline-block;
+    font-size:0.8em;
+}
+
+/*
 #userForms input {
 	display: inline-block;
 	float:center;
-	width:15%;
+	width:auto;
 	font-family:Verdana;
+    font-size:0.8em;
 }
 
-#submitButton {
+#userForms label {
+	display: inline-block;
+	float:center;
+	width:auto;
 	font-family:Verdana;
+    font-size:0.8em;
+}
+*/
+
+#submitButton {
 	color:#3486E3;
 }
 
-#thanksSubmit {
-	display:none;
-	color:blue;
-}
+
