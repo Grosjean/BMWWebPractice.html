@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 
+<!-- Derping around in HTML, CSS and JQuery -->
+
 <html>
 	<head>
 		<title>BMW Options Form Testing</title>
 		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lobster'>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css'>
 		<link rel='stylesheet' type='text/css' href='css/stylesheet.css'/>
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
-		<div id="header"><h1>Check Out This Awesome BMW!</h1></div>
-        	
-		<div id="wrapper">       
+		<div id="header" class="wrapper"><h1>Check Out This Awesome BMW!</h1></div>
         
-			<div id="headerPics">
-				<img src='https://lh4.googleusercontent.com/RtGkbLqaESKev2pEBXXypGbb9p8e-_ceV4Q3652UWZA=w337-h224-p-no'></img>
-                <img src='https://lh3.googleusercontent.com/zkmfdaoZY5rraJqvBPzYs6OEoQsvDW1u7T6yDINnhm8=w337-h224-p-no'><img>
-                <img src='https://lh5.googleusercontent.com/EHfzTLaHvR32LaRHKq6oAaxAmPKXytL0JoXAHlNovJ4=w337-h224-p-no'></img>
+        <div class="wrapper">
+            <div id="menuBar">
+                
+                <a href="#">
+                    <div class="menuButton">
+                    Home
+                    </div>
+                </a>
+                
+                <a href="https://plus.google.com/u/0/photos/109656822710651377776/albums/5887121452003586385?hl=en" target="_blank">
+                    <div class="menuButton">
+                    More Pictures
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="menuButton">
+                    About
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="menuButton">
+                    Contact
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+		<div class="wrapper">
+            <div id="headerPics">
+				<a href="https://lh6.googleusercontent.com/-deeD1NVAMeM/UbNBz2Uqy4I/AAAAAAAAAqc/2tC4Y4eCtlw/w1024-h683-no/DSC_6031.jpg" target="_blank"><img src='https://lh4.googleusercontent.com/RtGkbLqaESKev2pEBXXypGbb9p8e-_ceV4Q3652UWZA=w337-h224-p-no'></img></a>
+                <a href="https://lh5.googleusercontent.com/-bd6p-hx7Y_s/UbNCOPoS3UI/AAAAAAAAAvU/IWpVwyruggY/w1024-h683-no/DSC_6084.jpg" target="_blank"><img src='https://lh3.googleusercontent.com/zkmfdaoZY5rraJqvBPzYs6OEoQsvDW1u7T6yDINnhm8=w337-h224-p-no'><img></a>
+                <a href="https://lh4.googleusercontent.com/-VIG85GqxbXI/UbNCDIPPrcI/AAAAAAAAAtk/lrcoETQirIY/w1024-h683-no/DSC_6178.jpg" target="_blank"><img src='https://lh5.googleusercontent.com/EHfzTLaHvR32LaRHKq6oAaxAmPKXytL0JoXAHlNovJ4=w337-h224-p-no'></img></a>
 			</div>
-			
+            
 			<p class="generalText">Welcome to Grosjean's BMW Page for testing out HTML.</p>
 			<p class="generalText">Enter your contact information below if you would like to stay up to date!</p>
 			
 			<fieldset id="userInfo">
                 <form id="userForms">
                     <label for="firstNameText">First Name:</label>
-                        <input id='firstNameText' type='text' class='text' name='userFirstName' value='First name' title='First name'>
+                        <input id='firstNameText' type='text' class='text' name='userFirstName' value='First name' title='Enter your first name!'>
                     <label for='lastNameText'>Last Name:</label>
-                        <input id='lastNameText' type='text' name='userLastName' value='Last name' title='Last name'>
+                        <input id='lastNameText' type='text' name='userLastName' value='Last name' title='Enter your last name'>
                     <label for='emailText'>E-mail Address:</label>
-                        <input id='emailText' type='text' name='userEmail' value='Email Address' title='Email Address'>
+                        <input id='emailText' type='text' name='userEmail' value='Email Address' title='Enter your email address'>
                     <input type='submit' id='submitButton'>
                 </form>
             </fieldset>
 
 		</div>
         
-        <div id="wrapper">
+        <div class="wrapper">
             
             <p>This is a <strong>2007 BMW 328i Sedan</strong> with Automatic transmission and ONLY 68k miles on it. The cars exterior is <strong>Sparkling Graphite Metallic</strong> with black leather seats and brushed aluminium panels. As you can see by the pictures, the car is in excellent condition with a few tasteful modifications to make it really stand out. The car has a CLEAN TITLE, is clean inside and out, and runs and drives great.  This car is a show car. You will get compliments from just about everywhere you go, as many enthusiasts consider the car <strong>"done perfectly".</strong></p>
-            <p>I <strong>purchased this Certified Pre-Owned</strong> Car in June of 2010 from BMW Dealership in Las Vegas, NV. I am the <strong>second owner</strong> of this beautiful machine and have taken pristine care of the car. The car was always hand washed with <a href="http://www.amazon.com/32oz-Optimum-Rinse-Wash-Shine/dp/B000E9TS6O/ref=pd_sim_auto_1" target="_blank">high quality waterless wash</a> to ensure the paint stays immaculate. It also recently underwent professional detail and paint correction to make the car really shine! </p>
-            <p>All body work was done at a prestigious shop in Plano, TX: <a href="http://www.newconceptautoworks.com/" target="_blank"> <strong>New Concept Autoworks.</strong></a> New Concepts does all the work on the local high end cars. </p>
-            <p>There are a few very minor imperfections and rock chips. Since I want you to be as informed as possible in your buying decision, I did my best to disclose all issues with the car in the pictures towards the bottom.</p>
-            <p>This car is being sold as-is, without any existing warranty. The CPO recently warranty expired in May 2013. Please don't hesitate to contact me to ask any questions at all.</p>
+            <p>I <strong>purchased this Certified Pre-Owned</strong> Car in June of 2010 from BMW Dealership in Las Vegas, NV. I am the <strong>second owner</strong> of this beautiful machine and have taken pristine care of the car. The car was always hand washed with high quality waterless wash to ensure the paint stays immaculate. It also recently underwent professional detail and paint correction to make the car really shine! All body work was done at a prestigious shop in Plano, TX: <a href="http://www.newconceptautoworks.com/" target="_blank" title="Visit the website. Don't worry, it opens in a new tab :)"> <strong>New Concept Autoworks.</strong></a> New Concepts does all the work on the local high end cars. </p>
+            <p>There are a few very minor imperfections and rock chips. Since I want you to be as informed as possible in your buying decision, I did my best to disclose all issues with the car in the pictures towards the bottom. This car is being sold as-is, without any existing warranty. The CPO recently warranty expired in May 2013. Please don't hesitate to contact me to ask any questions at all.</p>
         
         </div>
 		
-        <div id="wrapper">
-            <object height="360" width="640"><param
+        <div class="wrapper">
+            <object height="360" width="640">
+            <param
              name="movie"
              value="http://www.youtube.com/v/C0iVxDMGS9w?fs=1&amp;hl=en_US"><param
-             name="allowFullScreen" value="true"><param
+             name="allowFullScreen" value="true">
+             <param
              name="allowscriptaccess" value="always">
             <embed src="http://www.youtube.com/v/C0iVxDMGS9w?fs=1&amp;hl=en_US"
              type="application/x-shockwave-flash" allowscriptaccess="always"
@@ -59,9 +92,9 @@
         </div>
         
         
-        <div id="footer">
+        <div id="footer" class="wrapper">
             <p>Thanks for Looking!</p>
-        
+            
         </div>
 		
 		

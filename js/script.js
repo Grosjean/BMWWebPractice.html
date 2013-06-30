@@ -1,22 +1,22 @@
 $(document).ready(function() {
 
-	$('img').mouseenter(function() {
+	$('img,a,.menuButton').mouseenter(function() {
 		$(this).fadeTo('fast',0.75);
 	});
 	
-	$('img').mouseleave(function() {
+	$('img,a,.menuButton').mouseleave(function() {
 		$(this).fadeTo('fast',1);
 	});
-    
-	
 	
 	$('input:text').focus(function () {
-		if ($(this).val() == $(this).attr("title")) {
+		if ($(this).val() == $(this).attr("value")) {
 			$(this).val("");
+            $(this).css("color","black");
 		}
 	}).blur(function () {
 		if ($(this).val() == "") {
-			$(this).val($(this).attr("title"));
+			$(this).val($(this).attr("value"));
+            $(this).css("color","gray");
 		}
 	});
 	
@@ -34,11 +34,18 @@ $(document).ready(function() {
 		}
 		else
 		{
-			confirm("Thanks " + firstName + " " + lastName + ". We will contact you shortly!");
+			confirm("Thanks " + firstName + " " + lastName + ". We will contact you shortly!\n\nJust kidding, this feature does not really work yet :(");
 		}
 	
 	});
+    
+    $('.menuButton').mouseenter(function() {
+        
+        $(this).effect('bounce', {times:2}, 200);
+    
+    });
 
+    
 });
 
 

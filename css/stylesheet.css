@@ -3,35 +3,9 @@ body {
 	font-family:Verdana;
 }
 
-#header {
-	position: relative;
-	top: -10px;
-	background-color:#3486E3;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	height: 50px;
-    width: auto;
-    box-shadow: 5px 0px 5px #5BA3F5;
-    margin:0 auto;
-}
-
-#header h1 {
-	text-align:center;
-	color:#FCFCFC;
-	font-family:Verdana;
-	padding: 10px 10px 0px 10px;
-}
-
-#headerPics img {
-	text-align:center;
-	border-radius: 10px;
-	border:1px solid #3486E3;
-}
-
-#wrapper {
+.wrapper {
 	border:1px solid #3486E3;
 	position: relative;
-	top: -10px;
 	box-shadow: 5px 0px 5px #5BA3F5;
 	font-size:1em;
 	text-align:center;
@@ -39,23 +13,51 @@ body {
     width: auto;
     margin:0 auto;
     padding:10px 10px 10px 10px;
+    top:-20px;
 }
 
-#footer {
-    border:1px solid #3486E3;
-	position: relative;
-	top: -10px;
-	box-shadow: 5px 5px 5px #5BA3F5;
-	font-size:1em;
-	text-align:center;
-	font-family:Verdana, Arial, Sans-Serif;
-    width: auto;
-    margin:0 auto;
-    padding:10px 10px 10px 10px;
+
+#header {
+	background-color:#3486E3;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	height: 50px;
+    box-shadow: 5px 0px 5px #5BA3F5;
+    margin-top:30px;
+}
+
+#header h1 {
+	color:#FCFCFC;
+	font-family:Lucida Handwriting, Verdana, Arial, Sans-Serif;
+    margin-top:5px
+}
+
+#menuBar {
+    text-align:center;
+    display:inline-block;
+}
+
+#menuBar a {
+    display:inline-block;
+}
+
+.menuButton {
+    height:20px;
+    width:150px;
+    background-color:#C2DEFF;
+    text-align:center;
+    border:3px solid #003169;
+    border-radius:5px;
+    margin:0px 10px 0px 10px;
+    float:left;
+}
+
+#headerPics img {
+	border-radius: 10px;
+	border:1px solid #3486E3;
 }
 
 #userInfo {
-    width: auto;
     display:inline-block;
     border: 1px solid #3486E3;
 }
@@ -69,26 +71,38 @@ body {
     font-size:0.8em;
 }
 
-/*
-#userForms input {
-	display: inline-block;
-	float:center;
-	width:auto;
-	font-family:Verdana;
-    font-size:0.8em;
+input[type="text"] {
+    color:gray;
 }
-
-#userForms label {
-	display: inline-block;
-	float:center;
-	width:auto;
-	font-family:Verdana;
-    font-size:0.8em;
-}
-*/
 
 #submitButton {
 	color:#3486E3;
 }
 
+#content {
+    
+}
 
+p {
+    margin:15px;
+    line-height: 150%;
+}
+
+a:link, a:visited {
+    text-decoration:none;
+    color:blue;
+}
+
+a:hover {
+    text-decoration:underline;
+    color:#F2F2F2;
+}
+
+#footer {
+	box-shadow: 5px 5px 5px #5BA3F5;
+	font-family: Lucida Handwriting, Verdana, Arial, Sans-Serif;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    background-color:#C2DEFF;
+    color:#003D82;
+}
